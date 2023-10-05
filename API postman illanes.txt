@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "6cefd7e7-40e7-4336-a830-0afa49fc1257",
+		"name": "tp-api-desarrollo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22318302"
+	},
+	"item": [
+		{
+			"name": "traerLibros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/libros",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "traerAutores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/autores",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarLibro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Libro copado\",\r\n    \"fecha\": \"2023451023\",\r\n    \"genero\": \"terror\",\r\n    \"paginas\": \"212\",\r\n    \"autor\": \"Gonzalo Pozzoli\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/libros",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"libros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarAutor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Liliana\",\r\n    \"apellido\": \"Bodoc\",\r\n    \"biografia\": \"Nacio en el 1985 creo y tuvo una vida feliz\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/autores",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarLibro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/libros/1",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"libros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarAutor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/autores/1",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarLibro",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"titulo\": \"Libro copado y actualizado\",\r\n    \"fecha\": \"2023451023\",\r\n    \"genero\": \"terror\",\r\n    \"paginas\": \"212\",\r\n    \"autor\": \"Gonzalo Pozzoli\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/libros/2",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"libros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarAutor",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Liliana con otro nombre\",\r\n    \"apellido\": \"Bodoc\",\r\n    \"biografia\": \"Nacio en el 1985 creo y esta vez no vivio felizmente\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tp-api-rest-desarrollo.onrender.com/api/v1/autores/1",
+					"protocol": "https",
+					"host": [
+						"tp-api-rest-desarrollo",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"autores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
